@@ -1,2 +1,4 @@
 https://developertoarchitect.com/resources.html
 https://www.sei.cmu.edu/library/views-and-beyond-collection/
+http://www.iso-architecture.org/42010/applications.html
+http://www.iso-architecture.org/42010/templates/

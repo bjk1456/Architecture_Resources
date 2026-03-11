@@ -1,0 +1,62 @@
+"As a software system grows, so does the documentation that describes its
+architecture. A greatest hits reading list will help stakeholders navigate the
+morass of design artifacts so they can find relevant information. Creating a
+curated reading list provides new stakeholders with a starting point for
+learning about the architecture.
+
+Benefits
+• Highlight the most important design artifacts.
+• Provide context for design artifacts within the scope of the whole system.
+• Unify disparate, lightweight design artifacts to create a coherent, whole
+description.
+
+Description
+The greatest hits reading list is often a simple link page on the team’s wiki.
+Each link should include the following information:
+
+Title A brief, descriptive title for the artifact. Most artifacts already come with
+a title.
+
+Overview Briefly explain why this artifact is important or interesting. What
+should the stakeholder take away from the artifact? It may also be useful
+to mention when and why the artifact was created.
+
+Caveats In some cases the artifact may be incomplete or outdated. Mention
+any circumstances the stakeholder should know about when referring to
+the artifact.
+
+Guidelines and Hints
+
+• Organize the list around stakeholder concerns. Artifacts that address the
+same concern should be grouped together. Add a heading for the group.
+• The same artifact can be used to address different concerns. Use the
+overview and caveats to help stakeholders navigate an artifact from
+varying perspectives.
+• Take advantage of design artifacts from third-party sources. For example,
+if a pattern you are using is explained in a framework’s documentation
+or a blog post on the web, use it instead of creating your own document.
+• Include links to reference material that defines important concepts in the
+architecture as well as design artifacts.
+
+Example
+Here is an excerpt of a Greatest Hits Reading List from one team’s code
+repository:
+
+WIRE/FIRE/PIRE/TIRE Project: Greatest Hits Reading List
+
+Context Diagram - Get a feel for the lay of the land
+Inception Deck - Created in the first weeks of the project.  Much of 
+what's here has changed but it tells why we're building this system.
+Original system use cases - Largely abandoned but still useful context, 
+skim only.
+ASR Workbook - Mostly up to date.  The top quality attributes still apply.
+Checkpoint #2 Presentation - Created in March.   Includes the most 
+recent architecture diagrams that were shared with all stakeholders. 
+Search and Train sequence diagrams - Shows how different 
+components interact during specific use cases.  Useful for availability 
+analysis.
+Layers Overview - Shows how the code is organized" (Keeling, 267-268)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
+
+

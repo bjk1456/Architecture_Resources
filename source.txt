@@ -18,3 +18,7 @@ talk about quality attributes with stakeholders early in a system’s life:
 https://www.neverletdown.net/p/mini-quality-attribute-workshop.html
 An example of a quality attribute taxonomy for service-oriented architectures is available from the Software Engineering Institute:
 https://www.sei.cmu.edu/library/quality-attributes-and-service-oriented-architectures/
+
+The Point-of-View (POV) mad lib summarizes business goals and other stakeholder needs in a memorable, engaging format.
+The impact of each mad lib should be outcome focused. Try the 5 Whys technique to help get to the bottom of stakeholders’ real needs: 
+https://en.wikipedia.org/wiki/5_Whys

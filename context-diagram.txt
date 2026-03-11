@@ -1,0 +1,39 @@
+"A context diagram helps stakeholders understand where the software system
+fits in the world. Context diagrams show the people and systems that interact
+with the software system you are responsible for developing.
+
+Benefits
+• Provide a high-level overview of the systems and stakeholder groups the
+system directly interacts with or relies on.
+• Make the boundary between the system you’re building and the outside
+world obvious to stakeholders.
+• Use as a natural entry point for learning about the system’s architecture.
+• Ensure everyone is aware of and agrees with the general system scope.
+
+Description
+In a typical context diagram, the system you are developing goes in the center.
+Draw the various people, software systems, and hardware your system will
+use or interact with around the system whose context you are describing.
+Arrows are used to show the relationship among these various elements to
+describe the overall circumstances in which the system you’re designing lives.
+
+Context diagrams can take on many forms and need not be only a box-and
+line diagram. Any graphical depiction that can show where the system fits in
+the world can work, including drawings, storyboards, cartoon strips, and
+photographs. Some teams have even experimented with using video and
+animation to describe a system’s context.
+
+Guidelines and Hints
+• It’s OK to use informal notations. The most important thing is to commu
+nicate effectively.
+• Show people and systems relevant to the system you are designing.
+• Label arrows to tell how two things are related.
+• Include a legend to describe the notations in the diagram.
+
+Example
+Here is a possible context diagram for Project Lionheart:
+..."
+
+(Keeling, 265-266)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.

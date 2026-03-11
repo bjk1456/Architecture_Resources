@@ -12,3 +12,9 @@ http://www.iso-architecture.org/42010/afs/frameworks-table.html
 Designing for the Digital Age: How to Create Human-Centered Products and Services
 An extensive excerpt from the chapter on stakeholder interviews:
 https://boxesandarrows.com/understanding-the-business/
+
+The mini-Quality Attribute Workshop (mini-QAW) is a lean, facilitated workshop designed to help you 
+talk about quality attributes with stakeholders early in a system’s life:
+https://www.neverletdown.net/p/mini-quality-attribute-workshop.html
+An example of a quality attribute taxonomy for service-oriented architectures is available from the Software Engineering Institute:
+https://www.sei.cmu.edu/library/quality-attributes-and-service-oriented-architectures/

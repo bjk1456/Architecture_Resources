@@ -1,0 +1,85 @@
+"Figure out what matters in your architecture by creating a bite-sized summary
+stakeholders will actually use. An architecture haiku describes a view of the
+architecture using only a single piece of paper. The architecture haiku was
+originally proposed by George Fairbanks.
+
+Benefits
+• Think through and articulate the essential parts of the architecture.
+• Produce an artifact that is easily consumed by readers. The end result is
+almost like a flier advertising the best parts of the architecture.
+• Create a frame of reference for other documentation.
+
+Description
+Architecture haikus can be recorded as a slide, an image, or text. The format
+is less important as the focus and brevity. No matter how you record it, an
+architecture haiku should include the following information [Kee15]:
+• A brief summary of the overall solution
+• A list of important technical constraints
+• A high-level summary of key functional requirements
+• A prioritized list of quality attributes
+• A brief explanation of design decisions, including rationale and trade-offs
+• A list of architectural styles and patterns used
+• A list of only the diagrams that add meaning beyond the information
+already on the page
+The haiku should be only one page. In practice, nobody is counting but con
+ciseness is the secret sauce.
+
+Guidelines and Hints
+• Do not attempt to record everything about the architecture. Focus only
+on what is most important.
+• Establish a common vocabulary for architectural concepts so everyone
+speaks the same language.
+• Set aside time to explore design options before starting.
+• Treat the architecture haiku as a living document.
+• Use the architecture haiku as an outline or executive summary for a
+longer architecture description.
+• The architecture haiku is not a replacement for other design artifacts.
+
+Example
+Here’s a partial architecture haiku for Project Lionheart. There is also a tem
+plate available on my website to help get you started.6
+Project Lionheart is a publicly available web application that will help the
+Springfield Office of Management and Budget manage the city’s requests
+for proposals (RFPs) and local businesses to find RFPs of interest.
+Key Decisions and Rationale
+
+Business Goals
+• Reduce procurement costs
+by 30%
+•Improve city engagement with
+local businesses
+•Cut the time required to publish
+a new RFP in half
+
+Key Decisions and Rationale
+• Node.js for web app—team has
+experience
+• MySQL database—free, open
+source
+Apache Solr—free, open source
+• SOA with REST—decouple com
+ponents, team interested in
+experimenting with emerging
+tech trends
+• Java for web services—open
+source, low-risk, great tool
+support
+
+Top Quality Attributes
+Security > Availability > Performance
+Architecture Patterns Used
+Service-Oriented Architecture (SOA),
+Layered web application, REST APIs
+for web services" (Keeling, 263-264)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
+
+
+
+https://www.georgefairbanks.com/software-architecture/architecture-haiku/
+https://web.archive.org/web/20250429092515/http://neverletdown.net/2015/03/architecture-haiku.html
+
+
+
+
+https://www.georgefairbanks.com/software-architecture/architecture-haiku/

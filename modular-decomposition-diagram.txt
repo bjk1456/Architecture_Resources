@@ -1,0 +1,44 @@
+Modular Decomposition Diagram
+
+Show how the architecture is composed of varying abstractions that come
+together to create a coherent whole. A modular decomposition diagram is a
+simple tree diagram that shows how varying granularities of abstraction are
+related to one another. The word decomposition in this context means to
+break into smaller pieces, not to rot.
+
+Modular decomposition is a general technique that can be used in many cir
+cumstances—from code package organization to organization charts to work
+breakdown structures used in project planning.
+
+Benefits
+• Uniquely name concepts at different granularities of abstraction.
+• Map refinements in the architecture.
+• Use to analyze organizational alignment with the system’s composition.
+• Reduce complexity without losing traceability to related elements.
+• Promote system thinking within the architecture.
+
+Description
+Modular decomposition diagrams are nearly always drawn as a tree. The root
+node of the tree is the system. Each level of the tree breaks down (decomposes)
+a specific module to show finer-grained details. In a large system, the bottom
+most leaf nodes might represent a module implemented by a single team. In
+a smaller system, the bottommost leaf nodes might represent a specific
+package or class in the architecture.
+Each level of the tree is an opportunity to group architectural concepts and
+show how they are related to ideas that are both bigger picture and also more
+detailed.
+
+Guidelines and Hints
+• Use the diagram to help reason about quality attributes such as agility,
+maintainability, time-to-market, costs, buildability, and deployability.
+• Use software to make drawing a tree simpler.
+• Break large diagrams into smaller ones to make them easier to understand.
+Be careful not to lose the context between the diagrams.
+• Leaf nodes should not be connected with other leaf nodes except by way
+of their parent.
+
+Example:
+
+"(Keeling, 272-273)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.

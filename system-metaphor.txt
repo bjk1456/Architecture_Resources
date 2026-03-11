@@ -1,0 +1,81 @@
+"Tell a simple story that demonstrates how the system influences specific
+quality attributes. The system metaphor was introduced by Kent Beck in
+Extreme Programming Explained: Embrace Change [Bec00] as a way to create
+a common vision and shared vocabulary for the architecture.
+
+Benefits
+• Lightweight description technique perfect for co-located teams to use
+during times of fast architectural evolution
+• Can be combined with other description methods
+• Cheap to create, easy to change
+
+Description
+
+In Making Metaphors That Matter [KV11], Michail Velichansky and I summarize
+concrete guidance for creating useful system metaphors. Good system
+metaphors have the following attributes:
+
+• Represent a single view of the system.
+• Deal with only one type of structure.
+• Provide clear guidance concerning design decisions.
+• Shed light on system properties.
+• Draw on a shared experience.
+• Corollary: Even a good metaphor still requires explanation.
+
+Every system metaphor comes with an information payload—the discussions
+and diagrams that went into creating the metaphor. The metaphor becomes
+a reference point to this other information and is meant to help team members
+recall these important details.
+
+Guidelines and Hints
+• Tell a memorable story and have fun.
+• Be specific and focus on what makes your system unique. Every software
+system ever made is like a city.
+• If a common reference point does not exist, then create a shared experience.
+• Pop culture and food are common points of reference for many metaphors.
+• Common architecture patterns serve the same purpose as system
+metaphors and can be used in the same way.
+
+Example
+
+In Project Lionheart we plan to build a simple data crawler, which pulls data
+from the city’s contracts database, normalizes the data, and pushes it into a
+search index. To do this efficiently, we’ll need a multithreaded crawler. But
+there’s a catch. If the crawler is too aggressive, we might crash the database
+and disrupt city services. If the crawler is too slow, we might not index the
+data fast enough to satisfy reliability quality attributes.
+
+To help us think through and share the design, we created the following
+system metaphor.
+
+The musical Newsies10 tells the story of the New York City Newsboy Strike of
+1899. In the movie (and history), the newsboys (newsies) purchase newspapers
+from a paper distribution center every morning and then resell the newspapers
+to the people of New York. Our crawler threads are just like the newsies. Each
+thread visits a distribution center, requests some rows to fetch from the
+database, and receives a block of rows to fetch and index. Any rows not fetched
+are forgotten. We can always sell more papes—pick up missing rows—
+tomorrow.
+
+Let’s walk through our checklist to see if this is a good metaphor:
+
+• Represent a single view. In this metaphor, we’re considering a single view
+of a single component, specifically the threading model in the crawler.
+Check.
+• Deal with only one type of structure. We’re only dealing with C&C struc
+tures, so there are no mixed models in play. Check.
+• Give clear guidance concerning design decisions. Newsies sieze the day
+and also fetch data to index while the distribution center provides a set of
+rows from the database. Only one newsie can have a database row at a
+time and the newsies are fully responsible for the rows once received from
+the distribution center. Leftover papers—database rows not crawled—are
+skipped. Check.
+ Shed light on system properties. This metaphor is trying to describe how
+we’ll address performance. We can control our aggressiveness by control
+ling the number of newsies working at the same time. Check.
+• Draw on shared experiences. The movie is a piece of 1990s cinematic gold
+starring a young Christian Bale. If teammates haven’t seen it, create a
+shared experience by ordering pizzas and having a movie night, or at least
+watching YouTube videos. Check and team building bonus!"(Keeling, 281-283)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
